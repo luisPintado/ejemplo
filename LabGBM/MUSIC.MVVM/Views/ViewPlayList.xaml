@@ -1,0 +1,24 @@
+﻿<Window x:Class="MUSIC.MVVM.Views.ViewPlayList"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:modelView="clr-namespace:MUSIC.MVVM.ViewModel"
+        Title="Agregar PlayList" Height="172" Width="300">
+    <Window.Resources>
+        <modelView:ViewModelListSong x:Key="ViewModelListSong"></modelView:ViewModelListSong>
+    </Window.Resources>
+        <Grid  x:Name="grid" DataContext="{Binding Source={StaticResource ViewModelListSong}}">
+            <ComboBox x:Name="combo" HorizontalAlignment="Left" Margin="26,45,0,0" VerticalAlignment="Top" Width="225"
+                  ItemsSource="{Binding CurrentListsSongs}" 
+                  DisplayMemberPath="Name"
+                  SelectedValuePath="Name" 
+                  SelectedItem="{Binding SelectListSong}"  
+                  SelectedValue="{Binding SelectListSong}"
+                  />
+            <Label Content="Lista a seleccionar:" HorizontalAlignment="Left" Margin="25,22,0,0" VerticalAlignment="Top" Width="201"/>
+            <TextBox Text="{Binding Name}" HorizontalAlignment="Left" Height="23" Margin="25,108,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120" />
+            <Label Content="Crear Nueva
+               " HorizontalAlignment="Left" Margin="25,82,0,0" VerticalAlignment="Top"/>
+            <Button  Content="Agregar" HorizontalAlignment="Left" Margin="195,108,0,0" VerticalAlignment="Top" Width="75"  Command="{Binding SubmitCommand}"/>
+        </Grid>
+  
+</Window>

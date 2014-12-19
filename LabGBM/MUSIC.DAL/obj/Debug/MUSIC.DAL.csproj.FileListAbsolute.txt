@@ -1,0 +1,9 @@
+c:\Users\luisalberto\documents\visual studio 2012\Projects\LabGBM\MUSIC.DAL\obj\Debug\MUSIC.DAL.csprojResolveAssemblyReference.cache
+c:\Users\luisalberto\documents\visual studio 2012\Projects\LabGBM\MUSIC.DAL\bin\Debug\MUSIC.DAL.dll
+c:\Users\luisalberto\documents\visual studio 2012\Projects\LabGBM\MUSIC.DAL\bin\Debug\MUSIC.DAL.pdb
+c:\Users\luisalberto\documents\visual studio 2012\Projects\LabGBM\MUSIC.DAL\bin\Debug\MUSIC.ENTITIES.dll
+c:\Users\luisalberto\documents\visual studio 2012\Projects\LabGBM\MUSIC.DAL\bin\Debug\MUSIC.ENTITIES.pdb
+c:\Users\luisalberto\documents\visual studio 2012\Projects\LabGBM\MUSIC.DAL\obj\Debug\MUSIC.DAL.dll
+c:\Users\luisalberto\documents\visual studio 2012\Projects\LabGBM\MUSIC.DAL\obj\Debug\MUSIC.DAL.pdb
+C:\Users\LuisAlberto\documents\visual studio 2012\Projects\LabGBM\MUSIC.DAL\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+C:\Users\LuisAlberto\documents\visual studio 2012\Projects\LabGBM\MUSIC.DAL\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll

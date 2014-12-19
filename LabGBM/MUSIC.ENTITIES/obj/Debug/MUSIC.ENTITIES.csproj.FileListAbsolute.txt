@@ -1,0 +1,4 @@
+c:\Users\luisalberto\documents\visual studio 2012\Projects\LabGBM\MUSIC.ENTITIES\bin\Debug\MUSIC.ENTITIES.dll
+c:\Users\luisalberto\documents\visual studio 2012\Projects\LabGBM\MUSIC.ENTITIES\bin\Debug\MUSIC.ENTITIES.pdb
+c:\Users\luisalberto\documents\visual studio 2012\Projects\LabGBM\MUSIC.ENTITIES\obj\Debug\MUSIC.ENTITIES.dll
+c:\Users\luisalberto\documents\visual studio 2012\Projects\LabGBM\MUSIC.ENTITIES\obj\Debug\MUSIC.ENTITIES.pdb

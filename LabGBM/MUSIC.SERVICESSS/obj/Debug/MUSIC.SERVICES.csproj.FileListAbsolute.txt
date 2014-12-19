@@ -1,0 +1,12 @@
+C:\Users\LuisAlberto\documents\visual studio 2012\Projects\LabGBM\MUSIC.SERVICESSS\bin\Debug\MUSIC.DAL.dll
+C:\Users\LuisAlberto\documents\visual studio 2012\Projects\LabGBM\MUSIC.SERVICESSS\bin\Debug\MUSIC.ENTITIES.dll
+C:\Users\LuisAlberto\documents\visual studio 2012\Projects\LabGBM\MUSIC.SERVICESSS\bin\Debug\MUSIC.DAL.pdb
+C:\Users\LuisAlberto\documents\visual studio 2012\Projects\LabGBM\MUSIC.SERVICESSS\bin\Debug\MUSIC.ENTITIES.pdb
+C:\Users\LuisAlberto\documents\visual studio 2012\Projects\LabGBM\MUSIC.SERVICESSS\obj\Debug\MUSIC.SERVICES.csprojResolveAssemblyReference.cache
+C:\Users\LuisAlberto\documents\visual studio 2012\Projects\LabGBM\MUSIC.SERVICESSS\bin\Debug\MUSIC.SERVICES.dll.config
+C:\Users\LuisAlberto\documents\visual studio 2012\Projects\LabGBM\MUSIC.SERVICESSS\bin\Debug\MUSIC.SERVICES.dll
+C:\Users\LuisAlberto\documents\visual studio 2012\Projects\LabGBM\MUSIC.SERVICESSS\bin\Debug\MUSIC.SERVICES.pdb
+C:\Users\LuisAlberto\documents\visual studio 2012\Projects\LabGBM\MUSIC.SERVICESSS\obj\Debug\MUSIC.SERVICES.dll
+C:\Users\LuisAlberto\documents\visual studio 2012\Projects\LabGBM\MUSIC.SERVICESSS\obj\Debug\MUSIC.SERVICES.pdb
+C:\Users\LuisAlberto\documents\visual studio 2012\Projects\LabGBM\MUSIC.SERVICESSS\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+C:\Users\LuisAlberto\documents\visual studio 2012\Projects\LabGBM\MUSIC.SERVICESSS\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll

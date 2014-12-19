@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="SongService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:59113/?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:59113/?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:59113/?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/MUSIC.ENTITIES" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ISongService_GetSong_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSong" />
+  </wsdl:message>
+  <wsdl:message name="ISongService_GetSong_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSongResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISongService_GetAlbum_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAlbum" />
+  </wsdl:message>
+  <wsdl:message name="ISongService_GetAlbum_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAlbumResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISongService_GetLists_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLists" />
+  </wsdl:message>
+  <wsdl:message name="ISongService_GetLists_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetListsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISongService_GetCompleteSongs_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCompleteSongs" />
+  </wsdl:message>
+  <wsdl:message name="ISongService_GetCompleteSongs_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCompleteSongsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISongService_AddPlayList_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddPlayList" />
+  </wsdl:message>
+  <wsdl:message name="ISongService_AddPlayList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddPlayListResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISongService_AddList_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddList" />
+  </wsdl:message>
+  <wsdl:message name="ISongService_AddList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddListResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISongService_GetSongsByList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSongsByList" />
+  </wsdl:message>
+  <wsdl:message name="ISongService_GetSongsByList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSongsByListResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ISongService">
+    <wsdl:operation name="GetSong">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISongService/GetSong" message="tns:ISongService_GetSong_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISongService/GetSongResponse" message="tns:ISongService_GetSong_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAlbum">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISongService/GetAlbum" message="tns:ISongService_GetAlbum_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISongService/GetAlbumResponse" message="tns:ISongService_GetAlbum_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLists">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISongService/GetLists" message="tns:ISongService_GetLists_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISongService/GetListsResponse" message="tns:ISongService_GetLists_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCompleteSongs">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISongService/GetCompleteSongs" message="tns:ISongService_GetCompleteSongs_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISongService/GetCompleteSongsResponse" message="tns:ISongService_GetCompleteSongs_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddPlayList">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISongService/AddPlayList" message="tns:ISongService_AddPlayList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISongService/AddPlayListResponse" message="tns:ISongService_AddPlayList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddList">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISongService/AddList" message="tns:ISongService_AddList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISongService/AddListResponse" message="tns:ISongService_AddList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSongsByList">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISongService/GetSongsByList" message="tns:ISongService_GetSongsByList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISongService/GetSongsByListResponse" message="tns:ISongService_GetSongsByList_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_ISongService" type="tns:ISongService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetSong">
+      <soap:operation soapAction="http://tempuri.org/ISongService/GetSong" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAlbum">
+      <soap:operation soapAction="http://tempuri.org/ISongService/GetAlbum" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLists">
+      <soap:operation soapAction="http://tempuri.org/ISongService/GetLists" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCompleteSongs">
+      <soap:operation soapAction="http://tempuri.org/ISongService/GetCompleteSongs" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddPlayList">
+      <soap:operation soapAction="http://tempuri.org/ISongService/AddPlayList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddList">
+      <soap:operation soapAction="http://tempuri.org/ISongService/AddList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSongsByList">
+      <soap:operation soapAction="http://tempuri.org/ISongService/GetSongsByList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="SongService">
+    <wsdl:port name="BasicHttpBinding_ISongService" binding="tns:BasicHttpBinding_ISongService">
+      <soap:address location="http://localhost:59113/Song" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

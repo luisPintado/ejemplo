@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+  <system.serviceModel>
+    <services>
+      <service name="MUSIC.SERVICES.SongService">
+        <host>
+          <baseAddresses>
+            <add baseAddress="http://localhost:59113"/>
+          </baseAddresses>
+        </host>
+        <endpoint address="Song" binding="basicHttpBinding" contract="MUSIC.SERVICES.ISongService" >
+        </endpoint>
+      </service>
+    </services>
+    <behaviors>
+      <serviceBehaviors>
+        <behavior>
+          <!-- Para evitar revelar información de los metadatos, 
+          establezca el valor siguiente en false antes de la implementación -->
+          <serviceMetadata httpGetEnabled="True"/>
+          <!-- Para recibir detalles de las excepciones en los fallos, con el fin de poder realizar la depuración, 
+          establezca el valor siguiente en true. Para no revelar información sobre las excepciones 
+          establézcalo en false antes de la implementación -->
+          <serviceDebug includeExceptionDetailInFaults="true" />
+        </behavior>
+      </serviceBehaviors>
+    </behaviors>
+  </system.serviceModel>
+
+</configuration>
